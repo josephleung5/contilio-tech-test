@@ -42,7 +42,7 @@ class Dashboard extends React.Component<{}, DashboardState> {
     return (
       <Container className="dashboard-container">
         {this.state.measurements.length > 0 ?
-          <Stack gap={3}>
+          <Stack gap={5}>
             <h1>{measurements[currentItemIndex].title}</h1>
             <Row>
               <Col sm={6}>
