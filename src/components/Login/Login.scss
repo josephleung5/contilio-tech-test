@@ -6,6 +6,11 @@ body {
   display: flex;
   height: 100vh;
   align-items: center;
+  justify-content: center;
+}
+
+.login-wrapper {
+  max-width: 650px;
 }
 
 .form-col {

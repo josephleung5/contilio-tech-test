@@ -26,7 +26,7 @@ class Login extends React.Component<{},LoginStates> {
   render() {
     return (
       <Container className="login-container">
-        <Row>
+        <Row className="login-wrapper">
           <Col className="form-col">
             <h1>Welcome</h1>
           </Col>

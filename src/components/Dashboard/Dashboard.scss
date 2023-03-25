@@ -1,6 +1,10 @@
 .dashboard-container {
   max-width: 1000px;
   margin-top: 1rem;
+
+  h1 {
+    margin-bottom: 1rem;
+  }
 }
 
 .range-bar-container {
@@ -10,8 +14,4 @@
 
 .range-bar-wrapper {
   width: 500px;
-}
-
-h1 {
-  margin-bottom: 1rem;
 }
