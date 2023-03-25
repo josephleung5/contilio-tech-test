@@ -8,7 +8,7 @@ import {
 } from 'react-bootstrap'
 import DashboardTable from './DashboardTable'
 import DashboardBarChart from './DashboardBarChart'
-import type { DashboardState } from "./types"
+import type { DashboardState, MeasurementAttributes } from "./types"
 import './Dashboard.scss'
 
 class Dashboard extends React.Component<{}, DashboardState> {
@@ -30,7 +30,7 @@ class Dashboard extends React.Component<{}, DashboardState> {
   render() {
     const measurements = this.state.measurements
     const currentItemIndex = this.state.currentItemIndex
-    const attributes = measurements.length > 0 ? measurements[currentItemIndex].attributes : []
+    const attributes: MeasurementAttributes[] = measurements.length > 0 ? measurements[currentItemIndex].attributes : []
 
     const getNextMeasurements = (index: number) => {
       this.setState({
@@ -55,7 +55,12 @@ class Dashboard extends React.Component<{}, DashboardState> {
             <div className="range-bar-container">
               <div className="range-bar-wrapper">
                 <Form.Label>Range</Form.Label>
-                <Form.Range aria-label="select-data" onChange={(e) => getNextMeasurements(Number(e.target.value))} min={0} max={attributes.length - 1} />
+                <Form.Range 
+                  aria-label="select-data"
+                  onChange={(e) => getNextMeasurements(Number(e.target.value))}
+                  min={0}
+                  max={attributes.length - 1}
+                />
               </div>
             </div>
           </Stack>
