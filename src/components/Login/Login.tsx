@@ -1,5 +1,11 @@
 import React from 'react'
-import { Row, Col, Form, Button, Container } from 'react-bootstrap'
+import {
+  Row,
+  Col,
+  Form,
+  Button,
+  Container
+} from 'react-bootstrap'
 import './Login.scss'
 
 type LoginStates = {
