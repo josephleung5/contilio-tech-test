@@ -6,6 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - use `react-router` to handle the routing within the project
 - use `react-bootstrap` to build UI quickly with ready-made components
+- use `recharts` to build charts
 - use `react-testing-library` for component testing
 
 ## Available Scripts
